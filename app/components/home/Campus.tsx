@@ -15,8 +15,8 @@ export default function Campus() {
       data-theme="light"
       className="relative overflow-hidden bg-sand text-ink px-5 sm:px-8 lg:px-10 "
     >
-      {/* full-bleed s7 background + left scrim so the heading stays readable */}
-      <div className="absolute inset-0 z-0">
+      {/* full-bleed s7 background + left scrim — desktop only (mobile shows it inline below) */}
+      <div className="absolute inset-0 z-0 hidden lg:block">
         <img
           src="/images/s7.png"
           alt="Aerial master plan — riverside quantum campus"
@@ -50,8 +50,15 @@ export default function Campus() {
           </Reveal>
         </div>
 
+        {/* mobile: show the aerial as an inline image (no text overlap); strip stacks below */}
+        <img
+          src="/images/s7.png"
+          alt="Aerial master plan — riverside quantum campus"
+          className="mt-8 block aspect-16/10 w-full rounded-card object-cover lg:hidden"
+        />
+
         <Reveal
-          className="mt-12 lg:mt-45 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(3,0.85fr)_1.1fr] items-center gap-8.5 rounded-card border border-ink/[0.12] bg-sand/95 p-5 shadow-panel backdrop-blur-sm"
+          className="mt-8 lg:mt-45 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(3,0.85fr)_1.1fr] items-center gap-8.5 rounded-card border border-ink/[0.12] bg-sand/95 p-5 shadow-panel backdrop-blur-sm"
         >
           {infraStats.map((is) => (
             <div key={is.title} className="flex items-start gap-3.5 border-b sm:border-b-0 sm:border-r border-ink/[0.12] pb-4.5 sm:pb-0 pr-4.5">

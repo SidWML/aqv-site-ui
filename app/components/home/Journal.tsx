@@ -156,9 +156,9 @@ export default function Journal() {
             <div className="t-body-sm text-ink/60">Subscribe to our newsletter for research highlights, events and ecosystem updates.</div>
           </div>
         </div>
-        <div className="flex items-center gap-2.5 rounded-control border border-ink/15 bg-paper py-1.75 pl-5.5 pr-1.75">
-          <input placeholder="Enter your email" className="w-50 border-none bg-transparent t-body text-ink outline-none" />
-          <button className="t-eyebrow flex cursor-pointer items-center gap-2.5 rounded-control border-none bg-night px-6 py-[13px] text-cream">
+        <div className="flex w-full items-center gap-2.5 rounded-control border border-ink/15 bg-paper py-1.75 pl-5.5 pr-1.75 sm:w-auto">
+          <input placeholder="Enter your email" className="min-w-0 flex-1 border-none bg-transparent t-body text-ink outline-none sm:w-50 sm:flex-none" />
+          <button className="t-eyebrow flex shrink-0 cursor-pointer items-center gap-2.5 whitespace-nowrap rounded-control border-none bg-night px-6 py-3.25 text-cream">
             SUBSCRIBE <ArrowR size={14} stroke="currentColor" sw={1.4} />
           </button>
         </div>
