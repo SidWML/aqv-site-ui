@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* ----------------------------------------------------------- design tokens ---
+   AQV brand palette + type. Exposes Tailwind utilities like `bg-night`,
+   `text-cream/70`, `text-gold`, `font-display`, `font-mono`. */
+@theme {
+  /* — surfaces ————————————————————————————————————————————————— */
+  --color-night: #0A0E1A;   /* primary dark surface / page bg    */
+  --color-night-2: #11162A; /* raised dark surface / dark cards  */
+  --color-steel: #E8E7EA;   /* light-steel surface (IBM system)  */
+  --color-sand: #F4F1EA;    /* primary light surface             */
+  --color-stone: #EDEAE1;   /* alternate light surface           */
+  --color-paper: #FBF9F4;   /* card surface on light             */
+
+  /* — text ————————————————————————————————————————————————————— */
+  --color-ink: #1A1A1A;     /* text on light surfaces            */
+  --color-cream: #F5F2EC;   /* text on dark surfaces             */
+
+  /* — quantum accent (primary) ———————————————————————————————————
+     Cool indigo/iris is the site's lead accent on every surface.   */
+  --color-iris: #8B92E8;          /* quantum accent — default       */
+  --color-indigo: #5B6CFF;        /* quantum accent — strong        */
+  --color-indigo-deep: #4B54D6;   /* quantum accent — deep          */
+  --color-accent: var(--color-iris);        /* semantic primary     */
+  --color-accent-strong: var(--color-indigo);
+  /* — warm secondary (sparing) ——————————————————————————————————— */
+  --color-gold: #C9A86A;          /* warm accent — secondary, rare  */
+  --color-accent-warm: var(--color-gold);
+
+  /* — radius ————————————————————————————————————————————————————
+     rounded-control / rounded-chip / rounded-card / rounded-pill     */
+  --radius-control: 0.625rem;  /* 10px — inputs, indicators          */
+  --radius-chip: 0.75rem;      /* 12px — icon chips, tags            */
+  --radius-card: 0.875rem;     /* 14px — cards, panels, media frames */
+  --radius-pill: 999px;        /* pills / buttons                   */
+
+  /* — elevation (shadows on light surfaces) ——————————————————————
+     shadow-card / shadow-panel / shadow-float                       */
+  --shadow-card: 0 14px 34px rgba(26, 26, 26, 0.08);   /* resting card    */
+  --shadow-panel: 0 20px 50px rgba(26, 26, 26, 0.12);  /* raised panel    */
+  --shadow-float: 0 30px 70px rgba(26, 26, 26, 0.18);  /* floating media  */
+
+  /* — motion ————————————————————————————————————————————————————— */
+  --ease-out-quart: cubic-bezier(0.22, 1, 0.36, 1);    /* ease-out-quart */
+
+  --font-display: 'Inter', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* ----------------------------------------------------------- type scale ---
+   The single typographic hierarchy for the whole site. Each class sets only
+   font geometry (family / size / weight / leading / tracking) — colour is
+   applied separately with the palette utilities (text-cream, text-accent…),
+   so one scale works on both dark and light surfaces.
+   Utilities layer wins over these, so a one-off `text-[..]` can still override. */
+@layer components {
+  /* display — hero & closing statements */
+  .t-display    { font-family: var(--font-display); font-weight: 500; font-size: clamp(2.8rem, 5.2vw, 4.4rem); line-height: 0.98; letter-spacing: -0.02em; }
+  .t-display-2  { font-family: var(--font-display); font-weight: 500; font-size: clamp(2.6rem, 5vw, 4.2rem);   line-height: 0.99; letter-spacing: -0.02em; }
+  /* section headings */
+  .t-h2         { font-family: var(--font-display); font-weight: 500; font-size: clamp(2.05rem, 3.4vw, 3.3rem); line-height: 1.04; letter-spacing: -0.015em; }
+  .t-h3         { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.7rem, 2.6vw, 2.7rem);  line-height: 1.1;  letter-spacing: -0.012em; }
+  .t-h4         { font-family: var(--font-display); font-weight: 600; font-size: 1.0625rem; line-height: 1.25; letter-spacing: -0.005em; }
+  /* card / feature titles (consolidated modular ramp) */
+  .t-title-lg   { font-family: var(--font-display); font-weight: 500; font-size: 1.75rem;   line-height: 1.1;  letter-spacing: -0.015em; }
+  .t-title      { font-family: var(--font-display); font-weight: 500; font-size: 1.375rem;  line-height: 1.2;  letter-spacing: -0.01em; }
+  .t-title-sm   { font-family: var(--font-display); font-weight: 500; font-size: 1.2rem;    line-height: 1.25; letter-spacing: -0.01em; }
+  /* numeric / metric values */
+  .t-stat-lg    { font-family: var(--font-display); font-weight: 500; font-size: 1.8rem;    line-height: 1;    letter-spacing: -0.01em; }
+  .t-stat       { font-family: var(--font-display); font-weight: 500; font-size: 1.5rem;    line-height: 1;    letter-spacing: -0.01em; }
+  /* pull quotes & summary statements */
+  .t-quote      { font-family: var(--font-display); font-weight: 500; font-size: 1.0625rem; line-height: 1.5;  letter-spacing: -0.005em; }
+  /* oversized ghost section index ("02") */
+  .t-index      { font-family: var(--font-display); font-weight: 500; font-size: clamp(3.5rem, 6vw, 6rem); line-height: 0.8; letter-spacing: -0.02em; }
+  /* labels */
+  .t-eyebrow    { font-family: var(--font-sans); font-weight: 600; font-size: 0.6875rem; line-height: 1; letter-spacing: 0.24em; text-transform: uppercase; }
+  .t-eyebrow-num{ font-family: var(--font-display); font-weight: 500; font-size: 1.3125rem; line-height: 1; }
+  .t-overline   { font-family: var(--font-mono); font-weight: 500; font-size: 0.625rem; line-height: 1; letter-spacing: 0.26em; text-transform: uppercase; }
+  /* body */
+  .t-lead       { font-family: var(--font-sans); font-weight: 450; font-size: clamp(1.05rem, 1.1vw, 1.2rem); line-height: 1.55; }
+  .t-body       { font-family: var(--font-sans); font-weight: 400; font-size: 0.9375rem; line-height: 1.7; }
+  .t-body-sm    { font-family: var(--font-sans); font-weight: 400; font-size: 0.8125rem; line-height: 1.6; }
+  .t-caption    { font-family: var(--font-sans); font-weight: 400; font-size: 0.75rem; line-height: 1.5; }
+  .t-micro      { font-family: var(--font-sans); font-weight: 400; font-size: 0.6875rem; line-height: 1.45; }
+  .t-mono       { font-family: var(--font-mono); font-weight: 400; font-size: 0.8125rem; line-height: 1.5; }
+
+  /* — icon chip ————————————————————————————————————————————————
+     Accent-tinted square that holds a 16–18px line icon. Set the size with
+     utilities (e.g. `icon-chip h-9 w-9`); a neutral variant is just
+     `bg-ink/[0.05]` with no ring. */
+  .icon-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-chip);
+    background: color-mix(in oklab, var(--color-accent) 12%, transparent);
+    box-shadow: 0 0 0 1px color-mix(in oklab, var(--color-accent) 18%, transparent);
+  }
+}
+
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth}
+body{background:#0A0E1A;color:#F5F2EC;font-family:'Inter',sans-serif}
+::selection{background:rgba(139,146,232,0.32)}
+
+@keyframes aqvFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes aqvSpin{to{transform:rotate(360deg)}}
+@keyframes aqvSpinR{to{transform:rotate(-360deg)}}
+@keyframes aqvPulse{0%,100%{opacity:.4;transform:scale(1)}50%{opacity:1;transform:scale(1.25)}}
+@keyframes aqvCue{0%{transform:translateY(0);opacity:0}30%{opacity:1}100%{transform:translateY(14px);opacity:0}}
+@keyframes aqvDrift{0%,100%{opacity:.5}50%{opacity:1}}
+@keyframes aqvMenuIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes aqvDrawerIn{from{opacity:0}to{opacity:1}}
+@keyframes aqvHeroUp{from{transform:translateY(26px)}to{transform:none}}
+@keyframes aqvCtaSpin{to{transform:rotate(360deg)}}
+@keyframes aqvPulseDot{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes aqvAurora{0%,100%{transform:translate3d(0,0,0) scale(1)}50%{transform:translate3d(3%,-4%,0) scale(1.12)}}
+@keyframes aqvMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* v2 — film-grain overlay */
+.v2-grain{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E")}
+.v2-marquee{animation:aqvMarquee 28s linear infinite}
+.v2-aurora{animation:aqvAurora 18s ease-in-out infinite}
+
+[data-reveal]{will-change:opacity,transform}
+[data-reveal].aqv-in{opacity:1!important;transform:none!important}
+
+/* Sub-page "soft" reveal: content visible immediately, only the transform animates */
+.aqv-rv-soft [data-reveal]{opacity:1!important}
+
+/* Page-hero entrance (pure CSS) */
+.aqv-hu{animation:aqvHeroUp .95s cubic-bezier(.22,1,.36,1)}
+
+/* CTA reveal */
+.aqv-cta-rv{transform:translateY(22px);transition:transform .9s cubic-bezier(.22,1,.36,1)}
+.aqv-cta-rv.in{transform:none}
+
+.aqv-carousel{scrollbar-width:none}
+.aqv-carousel::-webkit-scrollbar{display:none}
+
+/* Hero corner decorations (scroll cue + coherence note) overlap the centred
+   hero content on short/narrow viewports — hide them when there isn't room. */
+@media (max-height: 780px), (max-width: 1100px){
+  .aqv-hero-deco{display:none !important}
+}
