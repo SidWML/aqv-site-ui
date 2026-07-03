@@ -35,7 +35,7 @@ export default function FilmAct({
   const P = scenes.length;
   const endFrame = scenes[P - 1].frame;
   const nFrames = Math.max(1, endFrame - startFrame);
-  const sectionVh = 120 + P * 130; // room for smooth travel + a dwell per scene
+  const sectionVh = 150 + P * 190; // taller → slower, smoother frame travel + a dwell per scene
 
   const draw = React.useCallback((index: number) => {
     const canvas = canvasRef.current;
@@ -101,9 +101,10 @@ export default function FilmAct({
           const i = Math.min(P - 1, Math.floor(seg));
           const frac = seg - i;
           const prev = i > 0 ? scenes[i - 1].frame : startFrame;
-          const target = frac < 0.5 ? lerp(prev, scenes[i].frame, smooth(0, 0.5, frac)) : scenes[i].frame;
+          // smooth travel over 62% of each segment, then hold — slower, gentler moves
+          const target = frac < 0.62 ? lerp(prev, scenes[i].frame, smooth(0, 0.62, frac)) : scenes[i].frame;
 
-          curRef.current += (target - curRef.current) * (reduced ? 1 : 1 - Math.exp(-9 * dt));
+          curRef.current += (target - curRef.current) * (reduced ? 1 : 1 - Math.exp(-6.5 * dt));
           const idx = Math.min(FRAMES - 1, Math.max(0, Math.round(curRef.current)));
           if (idx !== drawnRef.current) { drawnRef.current = idx; draw(idx); }
 
@@ -117,7 +118,7 @@ export default function FilmAct({
           }
 
           setActive((v) => (v === i ? v : i));
-          const dwelling = g > 0.9 && frac > 0.55 && frac < 0.97;
+          const dwelling = g > 0.9 && frac > 0.66 && frac < 0.98;
           setShown((v) => (v === dwelling ? v : dwelling));
           if (cueRef.current) cueRef.current.style.opacity = String(g * (1 - smooth(0.0, 0.06, playU)));
         }
