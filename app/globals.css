@@ -46,6 +46,22 @@
   --font-display: 'Inter', sans-serif;
   --font-sans: 'Inter', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
+  --font-serif: 'Fraunces', Georgia, serif;   /* editorial display — "The Proposal" language */
+}
+
+/* ------------------------------------------- Light Edition tokens (v3.0) ---
+   Warm sunlit-diorama palette for /experience + the light NRG-style pages.
+   Additive: does NOT replace the dark site tokens above. Consume via
+   var(--paper), var(--leaf-2)… (see CLAUDE_CODE_MASTER_AQV_Site_and_Light_Tour.md, Part 1). */
+:root {
+  --paper: #F4F2EC; --paper-2: #ECE8DD; --card: #FFFFFF;
+  --lt-ink: #23262E; --lt-ink-2: #5A5F6C;
+  --leaf: #2E7D46; --leaf-2: #4CAF6D;          /* primary action green (NRG) */
+  --lt-gold: #E4A93C; --lt-gold-2: #C9962F;    /* hotspot diamonds, machine, highlights */
+  --sky: #BFE0EA; --cryo: #1E8FA8;             /* glass, temperature HUD */
+  --terra: #D96C4F;                            /* small warm accents: flags, markers */
+  --lt-line: rgba(35, 38, 46, 0.12);
+  --lt-shadow: 0 10px 30px rgba(35, 38, 46, 0.12);
 }
 
 /* ----------------------------------------------------------- type scale ---
@@ -84,6 +100,11 @@
   .t-caption    { font-family: var(--font-sans); font-weight: 400; font-size: 0.75rem; line-height: 1.5; }
   .t-micro      { font-family: var(--font-sans); font-weight: 400; font-size: 0.6875rem; line-height: 1.45; }
   .t-mono       { font-family: var(--font-mono); font-weight: 400; font-size: 0.8125rem; line-height: 1.5; }
+
+  /* editorial serif display (Fraunces) — the "Proposal" language. Pair with t-eyebrow/t-overline (mono) labels. */
+  .t-serif-display { font-family: var(--font-serif); font-weight: 400; font-size: clamp(3rem, 8.5vw, 7.5rem); line-height: 0.96; letter-spacing: -0.025em; }
+  .t-serif-h2      { font-family: var(--font-serif); font-weight: 400; font-size: clamp(2.1rem, 5vw, 4.4rem);  line-height: 1.02; letter-spacing: -0.02em; }
+  .t-serif-lead    { font-family: var(--font-serif); font-weight: 400; font-size: clamp(1.35rem, 2.4vw, 2.1rem); line-height: 1.32; letter-spacing: -0.01em; }
 
   /* — icon chip ————————————————————————————————————————————————
      Accent-tinted square that holds a 16–18px line icon. Set the size with

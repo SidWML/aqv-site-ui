@@ -48,7 +48,7 @@ export default function Launchpad() {
   }, []);
 
   return (
-    <SectionShell theme="light" bg="bg-white" innerClassName="px-5 sm:px-8 lg:px-10 py-14 sm:py-20 lg:py-27.5">
+    <SectionShell theme="light" id="launchpad" bg="bg-white" innerClassName="px-5 sm:px-8 lg:px-10 py-14 sm:py-20 lg:py-27.5">
       <div className="mb-7.5 grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] items-start gap-8 lg:gap-13.5">
         <div>
           <Eyebrow num="05" label="BUILDING THE FUTURE ECONOMY" accent="iris" className="mb-6.5" />
