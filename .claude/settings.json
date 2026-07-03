@@ -67,7 +67,23 @@
       "WebSearch",
       "Bash(grep -nE \"^#{1,3} \" PRD.md)",
       "PowerShell(npx tsc --noEmit)",
-      "PowerShell(npx next build 2>&1)"
+      "PowerShell(npx next build 2>&1)",
+      "PowerShell(if \\($?\\) { \"tsc OK\" })",
+      "Bash(node -e \"console.log\\(Object.keys\\(require\\('postprocessing'\\)\\).filter\\(k=>/ToneMapping/.test\\(k\\)\\)\\)\")",
+      "Bash(ls public/images)",
+      "Bash(ls public/3d)",
+      "Bash(ls app *)",
+      "Bash(ls content *)",
+      "PowerShell(Move-Item -Path \"c:\\\\projects\\\\2026\\\\aqv-ui\\\\app\\\\tour\" -Destination \"c:\\\\projects\\\\2026\\\\aqv-ui\\\\app\\\\experience\" -ErrorAction Stop)",
+      "PowerShell(\"moved\")",
+      "Read(//c/Users/P Sajid/.claude/projects/c--projects-2026-aqv-ui/memory/**)",
+      "Bash(rm -f tour-night-cinematic.md)",
+      "Bash(ffmpeg -version)",
+      "Bash(xargs echo \"MB so far:\")",
+      "Bash(git restore *)",
+      "Skill(artifact-design)",
+      "Skill(artifact-design:*)",
+      "WebFetch(domain:r3f.docs.pmnd.rs)"
     ]
   }
 }
