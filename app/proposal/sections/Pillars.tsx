@@ -17,7 +17,7 @@ export default function Pillars() {
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-8 lg:grid-cols-[0.85fr_1fr_0.95fr] lg:gap-12">
         <div>
           <Eyebrow num="02" label="THE FIVE PILLARS" accent="iris" className="mb-9" />
-          <Reveal as="h2" variant="wipe" delay={0.1} className="mb-8 t-h2">Five pillars. <Accent>One quantum future.</Accent></Reveal>
+          <Reveal as="h2" variant="fade" delay={0.1} className="mb-8 t-h2">Five pillars. <Accent>One quantum future.</Accent></Reveal>
           <Reveal as="p" delay={0.15} className="mb-8 max-w-95 t-body text-ink/70">AQV integrates five critical pillars into one self-reinforcing ecosystem — driving breakthroughs, building capability, and powering the quantum revolution from India to the world.</Reveal>
           <Reveal delay={0.2}><ArrowLink href="#ibm" label="EXPLORE THE ECOSYSTEM" accent="iris" theme="light" /></Reveal>
         </div>
