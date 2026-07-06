@@ -1,6 +1,6 @@
 "use client";
 
-import { Reveal, Accent, Eyebrow, PillButton } from "../../components/ui";
+import { Reveal, TextReveal, Eyebrow, PillButton } from "../../components/ui";
 
 export default function Hero() {
   return (
@@ -8,7 +8,11 @@ export default function Hero() {
       <div className="grid min-h-screen lg:grid-cols-2">
         <div className="flex flex-col justify-center px-6 py-24 sm:px-10 lg:px-14">
           <Eyebrow num="01" label="BUILT FOR THE FUTURE" accent="iris" className="mb-8" />
-          <Reveal as="h1" variant="wipe" className="max-w-[13ch] t-display">India&apos;s First <Accent>Quantum</Accent> Valley</Reveal>
+          <h1 className="max-w-[13ch] t-display">
+            <TextReveal text="India's First" className="block" delay={0.1} />
+            <TextReveal text="Quantum" className="block text-accent" delay={0.3} />
+            <TextReveal text="Valley" className="block" delay={0.45} />
+          </h1>
           <Reveal as="p" delay={0.15} className="mt-8 max-w-[46ch] t-lead text-ink/65">India&apos;s most advanced quantum ecosystem — uniting research, infrastructure, innovation and industry to solve humanity&apos;s hardest challenges.</Reveal>
           <Reveal delay={0.25} className="mt-11"><PillButton href="/contact" variant="solid">Invest in AQV ↗</PillButton></Reveal>
           <div className="mt-10 flex items-center gap-3 font-mono text-[11px] uppercase tracking-[0.2em] text-ink/45"><span className="inline-block h-1.5 w-1.5 rounded-full bg-accent" /> Amaravati, Andhra Pradesh, India</div>
