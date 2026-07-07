@@ -106,7 +106,7 @@ export default function ContactPage() {
 
           {/* the ways to engage */}
           <Reveal delay={0.3} className="lg:pb-3">
-            <div className="mb-5 t-overline text-cream/45">FOUR WAYS TO ENGAGE</div>
+            <div className="mb-5 t-overline text-cream/45">APPLY / CONNECT</div>
             <ul className="border-t border-cream/12">
               {routes.map((r) => (
                 <li key={r.n} className="group flex items-baseline gap-5 border-b border-cream/12 py-4">
@@ -135,7 +135,7 @@ export default function ContactPage() {
             <Reveal className="mb-6 flex items-center gap-3.5">
               <span className="t-eyebrow-num text-accent">02</span>
               <span className="h-px w-[30px] bg-accent/50" />
-              <span className="t-eyebrow text-ink/55">HOW CAN WE HELP</span>
+              <span className="t-eyebrow text-ink/55">HOW CAN WE HELP?</span>
             </Reveal>
             <Reveal as="h2" variant="wipe" className="mb-6 t-h2">
               Tell us what you&apos;re <Accent>building.</Accent>

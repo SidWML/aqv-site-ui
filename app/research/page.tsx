@@ -166,7 +166,7 @@ export default function ResearchPage() {
         <div aria-hidden className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(circle,rgba(245,242,236,0.5) 0.5px,transparent 0.5px)", backgroundSize: "46px 46px" }} />
         <div className="relative mx-auto max-w-[1600px]">
           <div className="mb-16 max-w-180">
-            <Eyebrow num="03" label="CORE RESEARCH DOMAINS" className="mb-6" />
+            <Eyebrow num="03" label="PRIORITY RESEARCH DOMAINS" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="t-h2">
               Five domains, one research <Accent>engine.</Accent>
             </Reveal>
@@ -210,7 +210,7 @@ export default function ResearchPage() {
           </Reveal>
 
           <div>
-            <Eyebrow num="04" label="FACILITIES & ACCESS" className="mb-6" />
+            <Eyebrow num="04" label="RESEARCH ON REAL QUANTUM INFRASTRUCTURE" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="mb-6 t-h3">
               Research on real quantum <Accent>hardware.</Accent>
             </Reveal>
@@ -240,7 +240,7 @@ export default function ResearchPage() {
         <div className="mx-auto max-w-[1600px]">
           <div className="mb-14 grid items-end gap-8 lg:grid-cols-[1fr_0.85fr]">
             <div>
-              <Eyebrow num="05" label="PROGRAMS & COLLABORATION" className="mb-6" />
+              <Eyebrow num="05" label="COLLABORATION MODELS" className="mb-6" />
               <Reveal as="h2" variant="wipe" className="t-h2">
                 How institutions work <Accent>with AQV.</Accent>
               </Reveal>
@@ -274,7 +274,7 @@ export default function ResearchPage() {
       <section className="relative overflow-hidden bg-night px-5 py-16 sm:px-8 lg:px-10 lg:py-30">
         <div className="mx-auto max-w-[1600px]">
           <div className="mb-14 max-w-180">
-            <Eyebrow num="06" label="RESEARCH IMPACT" className="mb-6" />
+            <Eyebrow num="06" label="RESEARCH OUTPUTS & IMPACT" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="t-h2">
               Measurable <Accent>output.</Accent>
             </Reveal>

@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "cards", id: "latest", nav: "Latest", num: "01", eyebrow: "LATEST",
+    kind: "cards", id: "latest", nav: "Latest", num: "01", eyebrow: "LATEST NEWS",
     title: "The latest from", accent: "the valley.",
     lead: "Announcements, milestones and coverage from Amaravati Quantum Valley.",
     items: [

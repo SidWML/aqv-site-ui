@@ -11,7 +11,6 @@ import Pillars from "./Pillars";
 import IbmSystem from "./IbmSystem";
 import Launchpad from "./Launchpad";
 import Research from "./Research";
-import Campus from "./Campus";
 import Partners from "./Partners";
 import Journal from "./Journal";
 import Cta from "./Cta";
@@ -22,14 +21,13 @@ import Cta from "./Cta";
  * observer drives every `data-reveal` element across the sections.
  */
 const SECTIONS = [
-  { id: "foundation", label: "Foundation" },
+  { id: "foundation", label: "Why AQV" },
   { id: "pillars", label: "Five Pillars" },
-  { id: "ibm", label: "IBM System Two" },
-  { id: "launchpad", label: "Launchpad" },
-  { id: "research", label: "Research" },
-  { id: "infra", label: "Infrastructure" },
+  { id: "ibm", label: "Quantum Computing" },
+  { id: "launchpad", label: "Future Economy" },
+  { id: "research", label: "Research & Infrastructure" },
   { id: "partners", label: "Partners" },
-  { id: "insights", label: "Journal" },
+  { id: "insights", label: "Latest" },
 ];
 
 export default function Home() {
@@ -44,7 +42,6 @@ export default function Home() {
       <IbmSystem />
       <Launchpad />
       <Research />
-      <Campus />
       <Partners />
       <Journal />
       <Cta />

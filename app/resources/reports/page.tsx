@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "cards", id: "featured", nav: "Featured", num: "01", eyebrow: "FEATURED",
+    kind: "cards", id: "featured", nav: "Featured", num: "01", eyebrow: "FEATURED REPORTS",
     title: "Reports from", accent: "the valley.",
     lead: "Flagship documents on the mission, the ecosystem and the road to 2030.",
     items: [

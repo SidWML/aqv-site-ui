@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "overview-detail", nav: "The Campus", num: "02", eyebrow: "THE FLOOR",
+    kind: "prose", id: "overview-detail", nav: "Characterisation", num: "02", eyebrow: "CHARACTERISATION & METROLOGY",
     title: "World-class facilities,", accent: "shared by all.",
     body: [
       "AQV concentrates capital-intensive scientific infrastructure into shared facilities — so every research group, startup and partner works with tools that would be out of reach alone.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s7.png",
   },
   {
-    kind: "cards", id: "facilities", nav: "Facilities", num: "03", eyebrow: "WHAT'S ON CAMPUS",
+    kind: "cards", id: "facilities", nav: "Testbeds", num: "03", eyebrow: "TESTBEDS & PROTOTYPING",
     title: "The shared", accent: "infrastructure.",
     lead: "Purpose-built facilities, open to the whole valley.",
     items: [
@@ -24,7 +24,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "access", nav: "Access", num: "04", eyebrow: "USING THE FACILITIES",
+    kind: "media", id: "access", nav: "Access", num: "04", eyebrow: "ACCESSING THE FACILITIES",
     title: "Open floor, structured", accent: "access.",
     image: "/images/s4.png", flip: true,
     body: ["Facilities are shared on clear, published criteria — no single group monopolises the floor."],
@@ -36,7 +36,7 @@ const blocks: Block[] = [
     link: { href: "/contact", label: "REQUEST ACCESS" },
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "BY THE NUMBERS",
     title: "The campus, in", accent: "figures.",
     items: [
       { value: "9M", label: "sq ft quantum city" },
@@ -52,7 +52,7 @@ export default function Page() {
     <Subpage
       active="technology"
       hero={{
-        eyebrow: "INFRASTRUCTURE · FACILITIES",
+        eyebrow: "FACILITIES & CAPABILITIES",
         title: "The physical foundation of",
         accent: "the valley.",
         lead: "Cleanrooms, cryogenics, high-performance compute and the labs around IBM Quantum System Two — shared infrastructure, open to all.",
@@ -60,7 +60,7 @@ export default function Page() {
       }}
       blocks={blocks}
       cta={{
-        eyebrow: "GET ONTO THE FLOOR",
+        eyebrow: "REQUEST FACILITY ACCESS",
         title: "Work in the",
         accent: "valley.",
         lead: "Request access to shared facilities for research, startups or enterprise pilots.",

@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "wiser", nav: "WISER", num: "04", eyebrow: "THE WISER PIPELINE",
+    kind: "media", id: "wiser", nav: "Schools & Colleges", num: "04", eyebrow: "SCHOOLS, COLLEGES & PROFESSIONALS",
     title: "From first exposure to", accent: "research-grade.",
     image: "/images/s5/s5.png", flip: true,
     body: ["WISER is AQV's talent engine — a single pipeline that carries learners from awareness through to capability, at national scale."],
@@ -33,7 +33,7 @@ const blocks: Block[] = [
     link: { href: "/talent", label: "EXPLORE TALENT & SKILLS" },
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Featured Programmes", num: "05", eyebrow: "FEATURED PROGRAMMES",
     title: "Learning at", accent: "scale.",
     items: [
       { value: "64K+", label: "WISER learners today" },
@@ -49,7 +49,7 @@ export default function Page() {
     <Subpage
       active="learn"
       hero={{
-        eyebrow: "LEARN · LEARNING PATHWAYS",
+        eyebrow: "QUANTUM FOR EVERYONE",
         title: "Learn to think in",
         accent: "quantum.",
         lead: "Structured pathways from first exposure to research-grade capability — across Quantum, AI and Cybersecurity, for everyone.",

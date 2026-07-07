@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "focus", nav: "Focus", num: "02", eyebrow: "THE DOMAIN",
+    kind: "prose", id: "focus", nav: "Why It Matters", num: "02", eyebrow: "WHY QUANTUM COMPUTING MATTERS",
     title: "Solving problems classical machines", accent: "cannot reach.",
     body: [
       "Quantum computing is the anchor domain of Amaravati Quantum Valley. Around IBM Quantum System Two we run a full programme in scalable quantum systems, error mitigation and utility-scale algorithms.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s2.png",
   },
   {
-    kind: "features", id: "capabilities", nav: "Capabilities", num: "03", eyebrow: "WHAT WE BUILD",
+    kind: "features", id: "capabilities", nav: "AQV Capability", num: "03", eyebrow: "AQV CAPABILITY",
     title: "A working quantum computing", accent: "capability.",
     lead: "From the qubit up to the application layer — a stack our researchers and partners can actually run against.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "access", nav: "Access", num: "04", eyebrow: "HOW YOU WORK WITH IT",
+    kind: "media", id: "access", nav: "Infrastructure & Access", num: "04", eyebrow: "INFRASTRUCTURE & ACCESS",
     title: "Direct access to the", accent: "machine.",
     image: "/images/s6/c1.png", flip: true,
     body: ["Researchers, startups and enterprise teams get structured access to the system — not a waiting list."],
@@ -33,7 +33,7 @@ const blocks: Block[] = [
     link: { href: "/infrastructure", label: "EXPLORE THE INFRASTRUCTURE" },
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Applications", num: "05", eyebrow: "RESEARCH & INDUSTRY APPLICATIONS",
     title: "A capability, made", accent: "measurable.",
     items: [
       { value: "133", label: "Qubit Heron processor" },

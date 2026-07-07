@@ -116,7 +116,7 @@ export default function IndustryPage() {
           <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20">
             {/* sticky intro on the left */}
             <div className="lg:sticky lg:top-28 lg:self-start">
-              <Eyebrow num="02" label="INDUSTRY VERTICALS" className="mb-6" />
+              <Eyebrow num="02" label="PRIORITY INDUSTRY VERTICALS" className="mb-6" />
               <Reveal as="h2" variant="wipe" className="mb-6 t-h2">
                 Six sectors, <Accent>one platform.</Accent>
               </Reveal>
@@ -210,7 +210,7 @@ export default function IndustryPage() {
         <div className="mx-auto max-w-[1600px]">
           <div className="mb-12 grid gap-8 lg:grid-cols-[1fr_0.7fr] lg:items-end">
             <div>
-              <Eyebrow num="04" label="APPLICATIONS IN THE FIELD" className="mb-6" />
+              <Eyebrow num="04" label="APPLICATIONS & USE CASES" className="mb-6" />
               <Reveal as="h2" variant="wipe" className="t-h2">
                 From the lab bench <Accent>to the floor.</Accent>
               </Reveal>
@@ -248,7 +248,7 @@ export default function IndustryPage() {
       <section className="relative overflow-hidden bg-sand px-5 py-16 text-ink sm:px-8 lg:px-10 lg:py-30">
         <div className="mx-auto max-w-[1600px]">
           <div className="mb-14 max-w-160">
-            <Eyebrow num="05" label="ENGAGEMENT MODELS" className="mb-6" />
+            <Eyebrow num="05" label="ENGAGEMENT & PILOTS" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="t-h2">
               From quantum readiness <Accent>to deployment.</Accent>
             </Reveal>

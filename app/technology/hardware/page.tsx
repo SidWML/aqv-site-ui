@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "system", nav: "The System", num: "02", eyebrow: "THE ANCHOR",
+    kind: "prose", id: "system", nav: "Why It Matters", num: "02", eyebrow: "WHY QUANTUM HARDWARE MATTERS",
     title: "South Asia's first on-prem", accent: "IBM Quantum System.",
     body: [
       "IBM Quantum System Two, built around the 133-qubit Heron processor, is the differentiator at the centre of AQV — the most advanced quantum system in India, deployed on Indian soil.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s7.png",
   },
   {
-    kind: "features", id: "stack", nav: "The Stack", num: "03", eyebrow: "THE HARDWARE STACK",
+    kind: "features", id: "stack", nav: "AQV Capability", num: "03", eyebrow: "AQV CAPABILITY",
     title: "A sovereign hardware", accent: "supply chain.",
     lead: "System Two anchors a growing domestic stack — from cryogenics to control electronics.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "access", nav: "Access", num: "04", eyebrow: "USING THE HARDWARE",
+    kind: "media", id: "access", nav: "Infrastructure & Access", num: "04", eyebrow: "INFRASTRUCTURE & ACCESS",
     title: "Real machine time, not a", accent: "simulator.",
     image: "/images/s6/c1.png", flip: true,
     body: ["Access is structured so that projects with real workloads get real time on the system."],
@@ -33,7 +33,7 @@ const blocks: Block[] = [
     link: { href: "/infrastructure", label: "EXPLORE THE INFRASTRUCTURE" },
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Applications", num: "05", eyebrow: "RESEARCH & INDUSTRY APPLICATIONS",
     title: "The machine, in", accent: "figures.",
     items: [
       { value: "133", label: "Qubit Heron processor" },

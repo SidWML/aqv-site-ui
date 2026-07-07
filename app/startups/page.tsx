@@ -113,7 +113,7 @@ export default function StartupsPage() {
             The AQV Launchpad is India's most advanced quantum startup incubator — labs, hardware access, capital, mentorship and go-to-market, all under one roof.
           </Reveal>
           <Reveal delay={0.74} className="flex flex-wrap items-center gap-x-10 gap-y-5">
-            <ArrowLink href="#offer" label="WHAT WE OFFER" accent="iris" theme="dark" gap={48} />
+            <ArrowLink href="#offer" label="FUNDING & MARKET ACCESS" accent="iris" theme="dark" gap={48} />
             <ArrowLink href="#apply" label="THE APPLICATION JOURNEY" accent="iris" theme="dark" gap={48} />
           </Reveal>
         </div>
@@ -131,7 +131,7 @@ export default function StartupsPage() {
         <div className="mx-auto max-w-[1600px]">
           <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-end lg:gap-20">
             <div>
-              <Eyebrow num="02" label="MOMENTUM IN NUMBERS" className="mb-6" />
+              <Eyebrow num="02" label="WHY AQV" className="mb-6" />
               <Reveal as="h2" variant="wipe" className="t-h2">
                 Founder energy, <Accent>backed by capital.</Accent>
               </Reveal>
@@ -168,7 +168,7 @@ export default function StartupsPage() {
           </Reveal>
 
           <div className="lg:pl-6">
-            <Eyebrow num="03" label="WHY BUILD AT AQV" className="mb-6" />
+            <Eyebrow num="03" label="WHAT AQV OFFERS" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="mb-6 t-h3">
               Everything a founder <Accent>needs.</Accent>
             </Reveal>
@@ -198,7 +198,7 @@ export default function StartupsPage() {
         <div aria-hidden className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(circle,rgba(245,242,236,0.5) 0.5px,transparent 0.5px)", backgroundSize: "46px 46px" }} />
         <div className="relative mx-auto max-w-[1600px]">
           <div className="mb-14 max-w-180">
-            <Eyebrow num="04" label="WHAT WE OFFER" className="mb-6" />
+            <Eyebrow num="04" label="FUNDING & MARKET ACCESS" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="t-h2">
               Five things every quantum <Accent>founder gets.</Accent>
             </Reveal>
@@ -276,7 +276,7 @@ export default function StartupsPage() {
       <section id="apply" className="relative overflow-hidden bg-night px-5 py-16 sm:px-8 lg:px-10 lg:py-30">
         <div className="mx-auto grid max-w-[1600px] gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <Eyebrow num="06" label="THE JOURNEY" className="mb-6" />
+            <Eyebrow num="06" label="STARTUP JOURNEY" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="mb-6 t-h3">
               From application <Accent>to scale.</Accent>
             </Reveal>

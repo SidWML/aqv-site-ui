@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s2.png",
   },
   {
-    kind: "list", id: "objectives", nav: "Objectives", num: "03", eyebrow: "MISSION OBJECTIVES",
+    kind: "list", id: "objectives", nav: "Strategic Objectives", num: "03", eyebrow: "STRATEGIC OBJECTIVES",
     title: "What the mission is", accent: "built to do.",
     lead: "Five objectives translate a national ambition into work that can be measured.",
     items: [
@@ -23,7 +23,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "alignment", nav: "Alignment", num: "04", eyebrow: "NATIONAL ALIGNMENT",
+    kind: "media", id: "alignment", nav: "National & State Alignment", num: "04", eyebrow: "NATIONAL & STATE ALIGNMENT",
     title: "One valley, aligned to a", accent: "national plan.",
     image: "/images/s3.png", flip: true,
     body: ["AQV does not operate in isolation — it is the anchor site of a national programme, aligned with mission institutions and state infrastructure."],

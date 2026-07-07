@@ -47,20 +47,20 @@ export default function Journal() {
       <div className="mb-8.5 flex flex-wrap items-start justify-between gap-6">
         <div>
           <Reveal className="mb-4.5 flex items-center gap-2.5 font-mono">
-            <span className="t-eyebrow-num text-accent">09</span>
+            <span className="t-eyebrow-num text-accent">08</span>
             <span className="text-ink/30">/</span>
-            <span className="t-eyebrow text-ink/60">JOURNAL</span>
+            <span className="t-eyebrow text-ink/60">LATEST FROM AQV</span>
           </Reveal>
           <Reveal as="h2" variant="wipe" delay={0.05} className="mb-4 t-h2">
             Latest from AQV
           </Reveal>
           <Reveal as="p" delay={0.1} className="max-w-95 t-body text-ink/65">
-            Discover breakthroughs, announcements, and stories from across the AQV ecosystem.
+            News, announcements, events and updates from the valley.
           </Reveal>
         </div>
         <div className="flex flex-col items-end gap-5.5">
           <a
-            href="#top"
+            href="/news"
             className="t-eyebrow inline-flex items-center gap-3 border-b border-ink/30 pb-2 text-ink no-underline"
           >
             VIEW ALL NEWS <ArrowUR size={13} className="text-accent" sw={1.4} />
@@ -91,7 +91,7 @@ export default function Journal() {
           </div>
           <div className="flex flex-col justify-center p-10">
             <span className="mb-4.5 t-eyebrow text-accent">RESEARCH BREAKTHROUGH</span>
-            <h3 className="mb-4.5 t-title-lg">AQV launches India&apos;s first 100+ qubit research initiative</h3>
+            <h3 className="mb-4.5 t-title-lg">AQV launches India&apos;s first sovereign quantum computing research initiative</h3>
             <p className="mb-7.5 t-body-sm text-ink/65">A major step towards building sovereign quantum computing capability and accelerating scientific discovery for national impact.</p>
             <div className="flex items-center justify-between border-t border-ink/[0.12] pt-4.5">
               <span className="t-eyebrow flex items-center gap-2">READ STORY <ArrowUR size={13} className="text-accent" sw={1.4} /></span>
@@ -113,9 +113,9 @@ export default function Journal() {
               <div className="flex items-center gap-2 t-caption text-ink/60">
                 <Pin size={14} className="text-accent" sw={1.3} r={2} />Amaravati Quantum Valley, AP
               </div>
-              <span className="flex h-10.5 w-10.5 items-center justify-center rounded-full bg-accent/[0.18]">
+              <a href="/events" aria-label="View all events" className="flex h-10.5 w-10.5 items-center justify-center rounded-full bg-accent/18 no-underline">
                 <svg width="15" height="15" viewBox="0 0 16 16"><path d="M3 8 H13 M9 4 L13 8 L9 12" className="stroke-accent" strokeWidth="1.4" fill="none" /></svg>
-              </span>
+              </a>
             </div>
           </div>
         </Reveal>

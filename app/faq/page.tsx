@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "faq", id: "general", nav: "General", num: "01", eyebrow: "THE BASICS",
+    kind: "faq", id: "general", nav: "General", num: "01", eyebrow: "GENERAL — ABOUT THE VALLEY",
     title: "About the", accent: "valley.",
     items: [
       { q: "What is Amaravati Quantum Valley?", a: "AQV is India's first integrated Quantum-AI ecosystem — a single place in Amaravati, Andhra Pradesh where quantum hardware, research, infrastructure, talent and capital are brought together." },

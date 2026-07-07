@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "focus", nav: "Focus", num: "02", eyebrow: "THE DOMAIN",
+    kind: "prose", id: "focus", nav: "Why It Matters", num: "02", eyebrow: "WHY SENSING & METROLOGY MATTERS",
     title: "Measuring what was", accent: "unmeasurable.",
     body: [
       "Quantum sensing exploits the fragility of quantum states to measure time, gravity, magnetic and electric fields with precision far beyond classical instruments.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s3.png",
   },
   {
-    kind: "features", id: "capabilities", nav: "Capabilities", num: "03", eyebrow: "WHAT WE BUILD",
+    kind: "features", id: "capabilities", nav: "AQV Capability", num: "03", eyebrow: "AQV CAPABILITY",
     title: "Precision as a", accent: "platform.",
     lead: "A shared sensing and metrology capability that research groups and industry can build on.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "applications", nav: "Applications", num: "04", eyebrow: "WHERE IT MATTERS",
+    kind: "media", id: "applications", nav: "Infrastructure & Access", num: "04", eyebrow: "INFRASTRUCTURE & ACCESS",
     title: "From the lab to the", accent: "field.",
     image: "/images/s6/c2.png",
     body: ["Sensing is often the first quantum technology to reach real deployment. We prioritise the applications with the clearest path to impact in India."],
@@ -32,7 +32,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Applications", num: "05", eyebrow: "RESEARCH & INDUSTRY APPLICATIONS",
     title: "Sensing at", accent: "scale.",
     items: [
       { value: "7+", label: "Active sensing labs" },

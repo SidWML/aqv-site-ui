@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "focus", nav: "Focus", num: "02", eyebrow: "THE DOMAIN",
+    kind: "prose", id: "focus", nav: "Why It Matters", num: "02", eyebrow: "WHY QUANTUM COMMUNICATION MATTERS",
     title: "Security guaranteed by", accent: "physics.",
     body: [
       "Quantum communication uses the laws of physics — not the difficulty of a maths problem — to protect information. Any attempt to intercept a quantum key disturbs it, and is detected.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s4.png",
   },
   {
-    kind: "features", id: "capabilities", nav: "Capabilities", num: "03", eyebrow: "WHAT WE BUILD",
+    kind: "features", id: "capabilities", nav: "AQV Capability", num: "03", eyebrow: "AQV CAPABILITY",
     title: "A quantum-safe", accent: "network.",
     lead: "The building blocks of secure communication, from fibre links to the free-space and satellite layer.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "network", nav: "The Network", num: "04", eyebrow: "HOW IT SCALES",
+    kind: "media", id: "network", nav: "Infrastructure & Access", num: "04", eyebrow: "INFRASTRUCTURE & ACCESS",
     title: "From campus link to", accent: "backbone.",
     image: "/images/s6/c3.png", flip: true,
     body: ["We build outward — a secure campus testbed first, then metro links, then the long-haul and satellite layer that make a national quantum network possible."],
@@ -32,7 +32,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Applications", num: "05", eyebrow: "RESEARCH & INDUSTRY APPLICATIONS",
     title: "Secure by", accent: "design.",
     items: [
       { value: "7+", label: "Communications labs" },
