@@ -2,17 +2,20 @@ import { Reveal, Accent, ArrowLink, SectionShell } from "../ui";
 
 /* ----------------------------------------------------------------- data --- */
 
+// Logos live in /public/images/colbs — c1–c14 are national & academic
+// institutions; c15–c17 are the anchor technology partners.
+// c16 (TCS) is a white-fill logo, so it's inverted to show on the light tile.
 const anchors = [
-  { name: "IBM", role: "Quantum systems & cloud" },
-  { name: "TCS", role: "Quantum cloud & services" },
-  { name: "HCL", role: "Technology & engineering" },
+  { src: "/images/colbs/c15.webp", alt: "IBM" },
+  { src: "/images/colbs/c16.svg", alt: "TCS", invert: true },
+  { src: "/images/colbs/c17.png", alt: "HCL" },
 ];
 
-// Confirmed national & academic institutions (HMIT June 2026). Interest-stage
-// names (AstraZeneca, Laurus, HDFC) are intentionally excluded until confirmed.
 const institutions = [
-  "National Quantum Mission", "C-DAC", "C-DOT", "NIELIT", "CSIR", "IISc",
-  "TIFR", "DRDO (NSTL)", "IIT Madras", "IIT Delhi", "IIT Tirupati", "APSCHE", "DST", "TDB",
+  "/images/colbs/c1.png", "/images/colbs/c2.png", "/images/colbs/c3.png", "/images/colbs/c4.png",
+  "/images/colbs/c5.png", "/images/colbs/c6.png", "/images/colbs/c7.png", "/images/colbs/c8.png",
+  "/images/colbs/c9.png", "/images/colbs/c10.png", "/images/colbs/c11.svg", "/images/colbs/c12.png",
+  "/images/colbs/c13.jpg", "/images/colbs/c14.png",
 ];
 
 /* ============ 07 · PARTNERS (light) ============ */
@@ -36,13 +39,12 @@ export default function Partners() {
           <Reveal delay={0.2} className="mb-9">
             <ArrowLink href="/partners" label="SEE HOW TO COLLABORATE" accent="iris" theme="light" gap={40} />
           </Reveal>
-          <Reveal delay={0.25} className="rounded-card border border-ink/12 bg-white/60 p-7">
-            <div className="mb-5 t-eyebrow text-ink/50">ANCHOR TECHNOLOGY PARTNERS</div>
-            <div className="grid grid-cols-3 gap-4">
+          <Reveal delay={0.25} className="rounded-card border border-ink/12 bg-white/60 p-6">
+            <div className="mb-4 t-eyebrow text-ink/50">ANCHOR TECHNOLOGY PARTNERS</div>
+            <div className="grid grid-cols-3 gap-3">
               {anchors.map((a) => (
-                <div key={a.name} className="flex flex-col gap-2 border-r border-ink/10 pr-4 last:border-r-0">
-                  <span className="font-display text-[26px] font-extrabold tracking-[-0.03em] text-ink">{a.name}</span>
-                  <span className="t-micro text-ink/55">{a.role}</span>
+                <div key={a.src} className="flex h-20 items-center justify-center rounded-lg bg-white px-4">
+                  <img src={a.src} alt={a.alt} className={`max-h-11 w-auto max-w-full object-contain${a.invert ? " invert" : ""}`} />
                 </div>
               ))}
             </div>
@@ -52,15 +54,15 @@ export default function Partners() {
         {/* ------------------------------------------------ right column --- */}
         <div>
           <Reveal className="mb-5.5 t-eyebrow text-ink/60">NATIONAL &amp; ACADEMIC INSTITUTIONS</Reveal>
-          <div className="mb-5.5 grid grid-cols-2 gap-3 sm:grid-cols-3">
-            {institutions.map((inst, i) => (
+          <div className="mb-5.5 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+            {institutions.map((src, i) => (
               <Reveal
-                key={inst}
+                key={src}
                 variant="scale"
-                delay={(i % 3) * 0.06}
-                className="flex items-center rounded-card border border-ink/12 bg-white/60 px-4 py-4.5 t-body-sm text-ink/70 transition-colors duration-300 hover:border-accent/40"
+                delay={(i % 4) * 0.05}
+                className="flex h-20 items-center justify-center rounded-card border border-ink/10 bg-white px-5 py-4 transition-colors duration-300 hover:border-accent/40"
               >
-                {inst}
+                <img src={src} alt="Partner institution" className="max-h-10 w-auto max-w-full object-contain" />
               </Reveal>
             ))}
           </div>
