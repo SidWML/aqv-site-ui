@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "focus", nav: "Focus", num: "02", eyebrow: "THE DOMAIN",
+    kind: "prose", id: "focus", nav: "Why It Matters", num: "02", eyebrow: "WHY MATERIALS & DEVICES MATTER",
     title: "The materials that make", accent: "quantum possible.",
     body: [
       "Every quantum device begins with a material — a superconductor, a spin qubit host, a photonic substrate. Advances in materials set the ceiling for everything above them in the stack.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s3-n.png",
   },
   {
-    kind: "features", id: "capabilities", nav: "Capabilities", num: "03", eyebrow: "WHAT WE BUILD",
+    kind: "features", id: "capabilities", nav: "AQV Capability", num: "03", eyebrow: "AQV CAPABILITY",
     title: "From atoms to", accent: "devices.",
     lead: "Discovery, characterisation and fabrication — a materials capability shared across the valley.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "facilities", nav: "Facilities", num: "04", eyebrow: "THE FLOOR",
+    kind: "media", id: "facilities", nav: "Infrastructure & Access", num: "04", eyebrow: "INFRASTRUCTURE & ACCESS",
     title: "Shared cleanroom and", accent: "cryogenics.",
     image: "/images/s6/c4.png",
     body: ["Materials work is capital-intensive. AQV concentrates that investment into shared facilities so every group works with world-class tools."],
@@ -33,7 +33,7 @@ const blocks: Block[] = [
     link: { href: "/infrastructure/facilities", label: "SEE THE FACILITIES" },
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Applications", num: "05", eyebrow: "RESEARCH & INDUSTRY APPLICATIONS",
     title: "Materials at the", accent: "frontier.",
     items: [
       { value: "9+", label: "Active materials labs" },

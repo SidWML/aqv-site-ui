@@ -15,7 +15,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "prose", id: "contribute", nav: "Contribute", num: "02", eyebrow: "WRITE WITH US",
+    kind: "prose", id: "contribute", nav: "Contribute", num: "02", eyebrow: "HAVE A PERSPECTIVE TO SHARE?",
     title: "Have a perspective to", accent: "share?",
     body: [
       "Insights is where the AQV community thinks in public — researchers, founders and partners writing about the quantum era as it unfolds.",

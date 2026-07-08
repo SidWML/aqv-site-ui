@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "why", nav: "Why AQV", num: "02", eyebrow: "FOR HARDWARE BUILDERS",
+    kind: "prose", id: "why", nav: "Why AQV", num: "02", eyebrow: "WHY AQV",
     title: "Build quantum hardware where the", accent: "stack already lives.",
     body: [
       "Hardware companies need more than office space — they need cryogenics, cleanrooms, fabrication and characterisation, and neighbours who understand the physics. AQV puts all of it in one place.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s6/c4.png",
   },
   {
-    kind: "features", id: "offer", nav: "What You Get", num: "03", eyebrow: "WHAT YOU GET",
+    kind: "features", id: "offer", nav: "What AQV Offers", num: "03", eyebrow: "WHAT AQV OFFERS",
     title: "Everything a hardware company", accent: "needs.",
     lead: "Shared infrastructure, a supply chain and access to real quantum hardware.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "list", id: "path", nav: "The Path", num: "04", eyebrow: "HOW TO ESTABLISH",
+    kind: "list", id: "path", nav: "How Engagement Works", num: "04", eyebrow: "HOW ENGAGEMENT WORKS",
     title: "From arrival to", accent: "production.",
     items: [
       { num: "01", title: "Establish", label: "LAND & SPACE", desc: "Move into purpose-built space with power, planning and connectivity ready." },
@@ -31,7 +31,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Opportunities & Models", num: "05", eyebrow: "OPPORTUNITIES & MODELS",
     title: "A place built to", accent: "build.",
     items: [
       { value: "500", label: "Acre campus" },
@@ -55,7 +55,7 @@ export default function Page() {
       }}
       blocks={blocks}
       cta={{
-        eyebrow: "ESTABLISH AT AQV",
+        eyebrow: "APPLY OR CONNECT",
         title: "Set up your hardware company",
         accent: "here.",
         lead: "Talk to the ecosystem office about space, facilities and incentives.",

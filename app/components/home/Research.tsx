@@ -1,8 +1,8 @@
 "use client";
 
 import { useRef } from "react";
-import { Reveal, Counter } from "../ui";
-import { PathIcon, ArrowUR, Placeholder } from "../dc";
+import { Reveal } from "../ui";
+import { PathIcon, ArrowUR } from "../dc";
 
 const rbtnBase: React.CSSProperties = {
   width: "42px",
@@ -26,6 +26,12 @@ const researchPillars = [
   { title: "ACADEMIC COLLABORATIONS", desc: "Working with leading universities and research institutions worldwide.", icon: "M3 9 L12 5 L21 9 L12 13 Z M7 11 V16 c0 1 10 1 10 0 V11" },
   { title: "TALENT DEVELOPMENT", desc: "Fellowships, PhD programs, and workshops to nurture quantum talent.", icon: "M9 8 a3 3 0 1 0 6 0 a3 3 0 0 0 -6 0 M4 20 c0-4 3-6 8-6 s8 2 8 6" },
   { title: "PUBLICATIONS & IP", desc: "Pushing the boundaries of science with impactful research and patents.", icon: "M6 3 H15 L18 6 V21 H6 Z M9 9 H15 M9 13 H15 M9 17 H13" },
+];
+
+const crossLinks = [
+  { label: "RESEARCH & TECHNOLOGY ROADMAP", href: "/research" },
+  { label: "INFRASTRUCTURE & MASTERPLAN", href: "/infrastructure" },
+  { label: "RESEARCH FACILITIES & TESTBEDS", href: "/infrastructure/facilities" },
 ];
 
 /* ============ 06 · RESEARCH (dark carousel) ============ */
@@ -54,7 +60,7 @@ export default function Research() {
           <div>
             <Reveal className="mb-8.5 flex items-center gap-3.5">
               <span className="t-eyebrow-num text-accent">06</span>
-              <span className="t-eyebrow text-cream/70">RESEARCH ENGINE</span>
+              <span className="t-eyebrow text-cream/70">RESEARCH & INFRASTRUCTURE</span>
             </Reveal>
             <Reveal
               as="h2"
@@ -62,24 +68,27 @@ export default function Research() {
               delay={0.1}
               className="mb-7 t-h3"
             >
-              Advancing knowledge. Building the{" "}
-              <span className="text-accent">future.</span>
+              A research engine and a purpose-built{" "}
+              <span className="text-accent">campus, in one place.</span>
             </Reveal>
             <Reveal
               as="p"
               delay={0.15}
               className="mb-8.5 t-body text-cream/70"
             >
-              AQV drives deep, collaborative research across quantum computing, materials, communications, and beyond. Our programs, labs, and partnerships are creating breakthroughs that will define the next era of technology.
+              From priority research domains to shared labs, testbeds and a masterplanned campus, AQV connects research ambition with the infrastructure needed to test, build and scale quantum technologies.
             </Reveal>
-            <Reveal
-              as="a"
-              href="#infra"
-              delay={0.2}
-              className="inline-flex items-center gap-10 border-b border-cream/25 pb-2.75 text-cream no-underline"
-            >
-              <span className="t-eyebrow">EXPLORE RESEARCH AT AQV</span>
-              <ArrowUR size={15} className="text-accent" sw={1.5} />
+            <Reveal delay={0.2} className="flex flex-col gap-3">
+              {crossLinks.map((cl) => (
+                <a
+                  key={cl.href}
+                  href={cl.href}
+                  className="group inline-flex items-center justify-between gap-10 border-b border-cream/20 pb-2.75 text-cream no-underline transition-colors duration-300 hover:border-accent/50"
+                >
+                  <span className="t-eyebrow transition-colors duration-300 group-hover:text-accent">{cl.label}</span>
+                  <ArrowUR size={15} className="text-accent" sw={1.5} />
+                </a>
+              ))}
             </Reveal>
           </div>
           <div className="overflow-hidden">
@@ -109,10 +118,7 @@ export default function Research() {
                     <h3 className="mb-4 t-title-lg">{r.title}</h3>
                     <p className="mb-6.5 t-body-sm text-cream/70">{r.desc}</p>
                     <div className="flex items-end justify-between border-t border-cream/15 pt-4.5">
-                      <div>
-                        <div className="t-stat"><Counter value={r.labs} /></div>
-                        <div className="mt-0.5 t-micro text-cream/55">Active Labs</div>
-                      </div>
+                      <div className="t-eyebrow text-cream/55">RESEARCH DOMAIN</div>
                       <span style={r.btnStyle}>
                         <ArrowUR size={15} stroke="currentColor" sw={1.4} />
                       </span>

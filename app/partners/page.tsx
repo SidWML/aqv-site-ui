@@ -170,7 +170,7 @@ export default function PartnersPage() {
       <section id="types" className="relative overflow-hidden bg-sand px-5 py-16 text-ink sm:px-8 lg:px-10 lg:py-30">
         <div className="mx-auto max-w-[1600px]">
           <div className="mb-16 max-w-180">
-            <Eyebrow num="02" label="PARTNER TYPES" className="mb-6" />
+            <Eyebrow num="02" label="PARTNERSHIP TYPES" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="t-h2">
               Five kinds of partner, <Accent>one ecosystem.</Accent>
             </Reveal>
@@ -351,7 +351,7 @@ export default function PartnersPage() {
         <div aria-hidden className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(circle,rgba(245,242,236,0.5) 0.5px,transparent 0.5px)", backgroundSize: "46px 46px" }} />
         <div className="relative mx-auto grid max-w-[1600px] items-center gap-12 lg:grid-cols-[1.25fr_0.75fr] lg:gap-20">
           <div>
-            <Eyebrow num="07" label="IN THEIR WORDS" className="mb-8" />
+            <Eyebrow num="07" label="PARTNER STORIES" className="mb-8" />
             <span aria-hidden className="mb-2 block font-display text-[5rem] leading-[0.6] text-accent/30">&ldquo;</span>
             <Reveal as="blockquote" variant="wipe" className="mb-9 font-display text-[clamp(1.7rem,3vw,2.6rem)] leading-[1.25] tracking-[-0.015em]">
               Partnering with AQV gave us more than infrastructure — it connected us to a living quantum ecosystem where research, talent and industry move as one.

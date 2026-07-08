@@ -2,7 +2,7 @@ import { Reveal } from "../ui";
 import { PathIcon, ArrowUR } from "../dc";
 
 const infraStats = [
-  { title: "500+ ACRES", desc: "Integrated quantum innovation campus.", icon: "M4 20 H20 M6 20 V10 H10 V20 M14 20 V6 H18 V20" },
+  { title: "~9M SQ FT PLANNED", desc: "Masterplanned integrated campus for 88,000 people.", icon: "M4 20 H20 M6 20 V10 H10 V20 M14 20 V6 H18 V20" },
   { title: "SUSTAINABLE BY DESIGN", desc: "Built with green infrastructure and responsible technology.", icon: "M12 3 c-3 4-3 8 0 12 c3-4 3-8 0-12 Z M12 15 V21" },
   { title: "BUILT FOR COLLABORATION", desc: "Where academia, industry and startups build the future together.", icon: "M9 8 a3 3 0 1 0 6 0 a3 3 0 0 0 -6 0 M4 20 c0-4 3-6 8-6 s8 2 8 6" },
 ];
@@ -34,17 +34,16 @@ export default function Campus() {
       <div className="relative z-[2] mx-auto max-w-[1600px] py-12">
         <div className="min-h-0 lg:min-h-115 max-w-115 pt-2.5">
           <Reveal className="mb-7.5 flex items-center gap-3.5">
-            <span className="t-eyebrow-num text-accent">07</span>
-            <span className="h-px w-7.5 bg-ink/30" />
-            <span className="t-eyebrow text-ink/60">BUILT FOR THE FUTURE</span>
+            <span className="h-px w-7.5 bg-accent" />
+            <span className="t-eyebrow text-ink/60">AQV MASTERPLAN</span>
           </Reveal>
           <Reveal as="h2" variant="wipe" delay={0.1} className="mb-7 t-h3">
             A purpose-built home for quantum <span className="text-accent">innovation.</span>
           </Reveal>
           <Reveal as="p" delay={0.15} className="mb-7.5 max-w-105 t-body text-ink/70">
-            AQV spans a 500+ acre integrated campus designed to accelerate discovery, innovation and industry creation. World-class infrastructure for world-changing ideas.
+            AQV is a masterplanned integrated campus — around 9 million sq ft, designed for 88,000 people — built to accelerate discovery, innovation and industry creation.
           </Reveal>
-          <Reveal as="a" delay={0.2} href="#partners" className="inline-flex items-center gap-11 border-b border-ink/25 pb-2.75 text-ink no-underline">
+          <Reveal as="a" delay={0.2} href="/infrastructure" className="inline-flex items-center gap-11 border-b border-ink/25 pb-2.75 text-ink no-underline">
             <span className="t-eyebrow">EXPLORE INFRASTRUCTURE</span>
             <ArrowUR size={15} className="text-accent" sw={1.5} />
           </Reveal>
@@ -76,7 +75,7 @@ export default function Campus() {
             <div>
               <div className="mb-1.5 whitespace-nowrap text-[12px] font-bold tracking-[0.07em] text-ink">EXPERIENCE AQV</div>
               <div className="mb-2.5 max-w-55 t-caption text-ink/60">Take a virtual walkthrough of the AQV campus and infrastructure.</div>
-              <span className="t-eyebrow border-b border-accent pb-1 text-accent">LAUNCH TOUR →</span>
+              <a href="/experience" className="t-eyebrow border-b border-accent pb-1 text-accent no-underline">LAUNCH TOUR →</a>
             </div>
           </div>
         </Reveal>

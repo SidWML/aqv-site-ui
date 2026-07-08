@@ -7,7 +7,7 @@ export default function Hero() {
     <section
       id="top"
       data-theme="dark"
-      className="relative flex min-h-screen items-center overflow-hidden bg-night"
+      className="relative flex min-h-screen items-center overflow-hidden bg-night pt-24 pb-16 lg:pt-20"
     >
       {/* backdrop image + left fade */}
       <div className="absolute right-0 top-0 h-full w-full opacity-85 lg:w-[100%]">
@@ -64,22 +64,25 @@ export default function Hero() {
 
       {/* content */}
       <div className="relative z-[5] mx-auto w-full max-w-[1600px] px-5 sm:px-8 lg:px-10">
-        <div className="max-w-155 pt-15">
+        <div className="max-w-155">
           <Reveal className="mb-7.5 flex items-center gap-4.5">
             <span className="t-eyebrow-num text-accent">01</span>
             <span className="h-px w-10 bg-accent/50" />
             <span className="t-overline text-accent">BUILT FOR THE FUTURE</span>
           </Reveal>
           <h1 className="mb-7.5 t-display">
-            <TextReveal text="India's First" className="block" delay={0.15} />
+            <TextReveal text="Amaravati" className="block" delay={0.15} />
             <TextReveal text="Quantum" className="block text-accent" delay={0.42} />
             <TextReveal text="Valley" className="block" delay={0.56} />
           </h1>
-          <Reveal as="p" delay={0.2} className="mb-9.5 max-w-107.5 t-lead text-cream/[0.72]">
-            India&apos;s most advanced quantum ecosystem — uniting research, infrastructure, innovation and industry to solve humanity&apos;s hardest challenges.
+          <Reveal as="p" delay={0.2} className="mb-5 max-w-107.5 t-lead text-cream/82">
+            India&apos;s first integrated quantum-AI ecosystem, taking shape in Amaravati, Andhra Pradesh.
+          </Reveal>
+          <Reveal as="p" delay={0.25} className="mb-9.5 max-w-115 t-body text-cream/65">
+            AQV brings research, hardware, software, talent and industry together in one place — a purpose-built home for quantum innovation and an open door for companies, investors and researchers worldwide.
           </Reveal>
           <Reveal delay={0.3} className="mb-16">
-            <ArrowLink href="#foundation" label="EXPLORE AQV" accent="iris" theme="dark" gap={60} />
+            <ArrowLink href="#foundation" label="EXPLORE THE VALLEY" accent="iris" theme="dark" gap={60} />
           </Reveal>
           <Reveal delay={0.4} className="flex items-start gap-3.25">
             <Pin size={22} className="text-accent" sw={1.3} r={2.4} style={{ marginTop: "2px" }} />

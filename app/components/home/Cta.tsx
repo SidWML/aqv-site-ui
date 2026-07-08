@@ -1,5 +1,5 @@
 import { Reveal, PillButton } from "../ui";
-import { PathIcon, ArrowUR, Pin } from "../dc";
+import { ArrowUR, Pin } from "../dc";
 
 /* ============ 10 · CTA (dark) ============ */
 export default function Cta() {
@@ -43,37 +43,31 @@ export default function Cta() {
 
         {/* eyebrow */}
         <Reveal className="z-[3] mb-10 flex items-center gap-4">
-          <span className="t-eyebrow-num text-accent">10</span>
+          <span className="t-eyebrow-num text-accent">09</span>
           <span className="h-px w-10 bg-accent/50" />
-          <span className="t-eyebrow text-cream/70">THE NEXT CHAPTER</span>
+          <span className="t-eyebrow text-cream/70">JOIN THE QUANTUM FUTURE</span>
         </Reveal>
 
         {/* heading */}
         <Reveal as="h2" variant="wipe" delay={0.1} className="z-[3] mb-9 t-display-2">
-          Build India&apos;s<br /><span className="text-accent">Quantum Future</span>
+          Join the<br /><span className="text-accent">Quantum Future</span>
+        </Reveal>
+
+        {/* subheading */}
+        <Reveal as="p" delay={0.15} className="z-[3] mb-4 max-w-140 t-lead text-cream/82">
+          Whether you want to build, invest, research, partner or learn — there is a pathway into AQV.
         </Reveal>
 
         {/* paragraph */}
-        <Reveal as="p" delay={0.15} className="z-[3] mb-11 max-w-140 t-lead text-cream/[0.72]">
-          AQV is more than a vision — it is India&apos;s movement to lead the quantum era. Together, let&apos;s create breakthroughs that will define generations.
+        <Reveal as="p" delay={0.18} className="z-[3] mb-11 max-w-120 t-body text-cream/65">
+          Tell us what you&apos;re looking to do, and we&apos;ll connect you to the right pathway at AQV.
         </Reveal>
 
-        {/* CTA pills */}
-        <Reveal delay={0.2} className="z-[3] mb-7.5 flex flex-wrap justify-center gap-4">
-          <PillButton href="#top" variant="solid" icon={<ArrowUR size={14} stroke="currentColor" sw={1.5} />}>
-            INVEST IN AQV
+        {/* primary CTA */}
+        <Reveal delay={0.2} className="z-[3] flex flex-wrap justify-center gap-4">
+          <PillButton href="/contact" variant="solid" icon={<ArrowUR size={14} stroke="currentColor" sw={1.5} />}>
+            APPLY / CONNECT
           </PillButton>
-          <PillButton href="#top" variant="outline" icon={<PathIcon d="M5 13 l3 3 6-6 M9 7 a3 3 0 1 0 6 0 a3 3 0 0 0 -6 0" size={16} className="text-accent" sw={1.4} />}>
-            PARTNER WITH US
-          </PillButton>
-          <PillButton href="#top" variant="outline" icon={<svg width="16" height="16" viewBox="0 0 24 24" className="stroke-accent" style={{ fill: "none", strokeWidth: 1.4 }}><circle cx="12" cy="8" r="3.4" /><path d="M5 20 c0-4 3.5-6 7-6 s7 2 7 6" /></svg>}>
-            APPLY TO PROGRAMS
-          </PillButton>
-        </Reveal>
-
-        {/* founding partnership line */}
-        <Reveal delay={0.25} className="z-[3] flex items-center gap-2.5 t-eyebrow text-accent">
-          <PathIcon d="M12 3 L20 6 V12 c0 5-4 8-8 9 c-4-1-8-4-8-9 V6 Z" size={14} className="text-accent" sw={1.3} />LIMITED FOUNDING PARTNERSHIP OPPORTUNITIES AVAILABLE
         </Reveal>
       </div>
 

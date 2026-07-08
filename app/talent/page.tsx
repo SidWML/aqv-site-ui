@@ -147,7 +147,7 @@ export default function TalentPage() {
         <div className="mx-auto max-w-[1600px]">
           <div className="mb-16 grid items-end gap-8 lg:grid-cols-[1.3fr_0.7fr]">
             <div className="max-w-180">
-              <Eyebrow num="02" label="THE WISER PIPELINE" className="mb-6" />
+              <Eyebrow num="02" label="THE TALENT PIPELINE" className="mb-6" />
               <Reveal as="h2" variant="wipe" className="t-h2">
                 From a first spark <Accent>to research leadership.</Accent>
               </Reveal>
@@ -263,7 +263,7 @@ export default function TalentPage() {
           </Reveal>
 
           <div className="lg:order-1">
-            <Eyebrow num="04" label="WHO IT'S FOR" className="mb-6" />
+            <Eyebrow num="04" label="WHO IT IS FOR" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="mb-6 t-h3">
               Built for whoever shows up <Accent>ready to learn.</Accent>
             </Reveal>

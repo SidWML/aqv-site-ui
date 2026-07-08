@@ -34,7 +34,7 @@ export default function SectionNav({ sections }: { sections: Section[] }) {
   const num = (i: number) => String(i + 1).padStart(2, "0");
 
   return (
-    <div className="fixed right-5 top-1/2 z-[90] hidden -translate-y-1/2 lg:block xl:right-8">
+    <div className="fixed right-5 top-24 z-90 hidden lg:block xl:right-8">
       <AnimatePresence mode="wait" initial={false}>
         {open ? (
           <motion.div

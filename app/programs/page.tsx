@@ -124,7 +124,7 @@ export default function ProgramsPage() {
             <Reveal className="mb-7.5 flex items-center gap-4.5">
               <span className="t-eyebrow-num text-accent">01</span>
               <span className="h-px w-10 bg-accent/50" />
-              <span className="t-overline text-accent">PROGRAMS</span>
+              <span className="t-overline text-accent">PROGRAMMES</span>
             </Reveal>
             <h1 className="mb-7 t-display">
               <TextReveal text="Four ways into" className="block" delay={0.1} />
@@ -170,7 +170,7 @@ export default function ProgramsPage() {
               <div className="mb-6 flex items-center gap-3.5">
                 <span className="t-eyebrow-num text-accent">02</span>
                 <span className="h-px w-[30px] bg-accent/50" />
-                <span className="t-eyebrow text-ink/55">THE PROGRAM CATALOG</span>
+                <span className="t-eyebrow text-ink/55">PROGRAMME CATALOGUE</span>
               </div>
               <Reveal as="h2" variant="wipe" className="t-h2">
                 A track for every <Accent>way in.</Accent>
@@ -310,7 +310,7 @@ export default function ProgramsPage() {
             <div className="mb-6 flex items-center gap-3.5">
               <span className="t-eyebrow-num text-accent">05</span>
               <span className="h-px w-[30px] bg-accent/50" />
-              <span className="t-eyebrow text-cream/55">HOW PROGRAMS RUN</span>
+              <span className="t-eyebrow text-cream/55">HOW PROGRAMMES RUN</span>
             </div>
             <Reveal as="h2" variant="wipe" className="t-h2">
               Structured to turn ambition <Accent>into capability.</Accent>
@@ -380,7 +380,7 @@ export default function ProgramsPage() {
               <div className="mb-6 flex items-center gap-3.5">
                 <span className="t-eyebrow-num text-accent">07</span>
                 <span className="h-px w-[30px] bg-accent/50" />
-                <span className="t-eyebrow text-cream/55">PROGRAM OUTCOMES</span>
+                <span className="t-eyebrow text-cream/55">PROGRAMME OUTCOMES</span>
               </div>
               <Reveal as="h2" variant="wipe" className="t-h2">
                 Reach that compounds <Accent>nationwide.</Accent>
@@ -414,7 +414,7 @@ export default function ProgramsPage() {
           <div>
             <Reveal className="mb-8 flex items-center gap-4">
               <span className="h-px w-10 bg-accent/50" />
-              <span className="t-overline text-accent">FIND YOUR PROGRAM</span>
+              <span className="t-overline text-accent">FIND YOUR PROGRAMME</span>
             </Reveal>
             <h2 className="mb-8 t-display-2">
               <TextReveal text="There&apos;s a path" className="block" delay={0.05} />

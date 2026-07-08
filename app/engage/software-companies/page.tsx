@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "why", nav: "Why AQV", num: "02", eyebrow: "FOR SOFTWARE BUILDERS",
+    kind: "prose", id: "why", nav: "Why AQV", num: "02", eyebrow: "WHY AQV",
     title: "Ship quantum software against", accent: "real hardware.",
     body: [
       "Quantum software is only as good as the hardware it runs on. AQV gives software companies direct access to IBM Quantum System Two and a hybrid HPC-quantum stack — not just simulators.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s6/c5.png",
   },
   {
-    kind: "features", id: "offer", nav: "What You Get", num: "03", eyebrow: "WHAT YOU GET",
+    kind: "features", id: "offer", nav: "What AQV Offers", num: "03", eyebrow: "WHAT AQV OFFERS",
     title: "A platform to build", accent: "on.",
     lead: "Open tooling, hybrid compute and a research community around you.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "list", id: "path", nav: "The Path", num: "04", eyebrow: "HOW TO ENGAGE",
+    kind: "list", id: "path", nav: "How Engagement Works", num: "04", eyebrow: "HOW ENGAGEMENT WORKS",
     title: "From onboarding to", accent: "product.",
     items: [
       { num: "01", title: "Onboard", label: "ACCESS & TOOLING", desc: "Get credentials, tooling and structured access to hybrid compute." },
@@ -31,7 +31,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Opportunities & Models", num: "05", eyebrow: "OPPORTUNITIES & MODELS",
     title: "A software ecosystem, in", accent: "figures.",
     items: [
       { value: "133", label: "Qubit hardware access" },
@@ -55,7 +55,7 @@ export default function Page() {
       }}
       blocks={blocks}
       cta={{
-        eyebrow: "ENGAGE WITH AQV",
+        eyebrow: "APPLY OR CONNECT",
         title: "Build your software company",
         accent: "here.",
         lead: "Talk to the ecosystem office about access, tooling and support.",

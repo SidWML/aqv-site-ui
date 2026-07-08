@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "list", id: "routes", nav: "Routes", num: "04", eyebrow: "WAYS TO ENGAGE",
+    kind: "list", id: "routes", nav: "How to Invest & Establish", num: "04", eyebrow: "HOW TO INVEST & ESTABLISH",
     title: "How capital", accent: "participates.",
     lead: "Several routes, from the fund to establishing on campus.",
     items: [
@@ -32,7 +32,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Opportunities & Models", num: "05", eyebrow: "OPPORTUNITIES & MODELS",
     title: "The opportunity, in", accent: "figures.",
     items: [
       { value: "₹500Cr+", label: "AQV quantum fund" },
@@ -56,7 +56,7 @@ export default function Page() {
       }}
       blocks={blocks}
       cta={{
-        eyebrow: "PARTNER WITH THE VALLEY",
+        eyebrow: "PARTNER WITH AQV",
         title: "Back the",
         accent: "ecosystem.",
         lead: "Talk to the ecosystem office about the fund, direct investment or establishing at AQV.",

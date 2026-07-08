@@ -83,7 +83,28 @@
       "Bash(git restore *)",
       "Skill(artifact-design)",
       "Skill(artifact-design:*)",
-      "WebFetch(domain:r3f.docs.pmnd.rs)"
+      "WebFetch(domain:r3f.docs.pmnd.rs)",
+      "Bash(sed -i 's/POWERING POSSIBILITIES/WHY AQV, WHY NOW/' Foundation.tsx)",
+      "Bash(sed -i 's/IBM POWERED QUANTUM SYSTEM/QUANTUM COMPUTING AT AQV/' IbmSystem.tsx)",
+      "Bash(sed -i 's/RESEARCH ENGINE/RESEARCH \\\\& INFRASTRUCTURE/' Research.tsx)",
+      "Bash(sed -i 's/STRONGER TOGETHER/PARTNERS \\\\& ECOSYSTEM/' Partners.tsx)",
+      "Bash(sed -i 's/>JOURNAL</>LATEST FROM AQV</' Journal.tsx)",
+      "Bash(sed -i -e 's/label=\"CORE RESEARCH DOMAINS\"/label=\"PRIORITY RESEARCH DOMAINS\"/' -e 's/label=\"FACILITIES & ACCESS\"/label=\"RESEARCH ON REAL QUANTUM INFRASTRUCTURE\"/' -e 's/label=\"PROGRAMS & COLLABORATION\"/label=\"COLLABORATION MODELS\"/' -e 's/label=\"RESEARCH IMPACT\"/label=\"RESEARCH OUTPUTS \\\\& IMPACT\"/' research/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"THE FLOOR\"/eyebrow: \"CHARACTERISATION \\\\& METROLOGY\"/' -e 's/eyebrow: \"WHAT'\\\\''S ON CAMPUS\"/eyebrow: \"TESTBEDS \\\\& PROTOTYPING\"/' -e 's/eyebrow: \"USING THE FACILITIES\"/eyebrow: \"ACCESSING THE FACILITIES\"/' -e 's/eyebrow: \"THE NUMBERS\"/eyebrow: \"BY THE NUMBERS\"/' -e 's/eyebrow: \"INFRASTRUCTURE · FACILITIES\"/eyebrow: \"FACILITIES \\\\& CAPABILITIES\"/' -e 's/eyebrow: \"GET ONTO THE FLOOR\"/eyebrow: \"REQUEST FACILITY ACCESS\"/' -e 's/nav: \"The Campus\"/nav: \"Characterisation\"/' -e 's/nav: \"Facilities\"/nav: \"Testbeds\"/' infrastructure/facilities/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"FOR HARDWARE BUILDERS\"/eyebrow: \"WHY AQV\"/' -e 's/eyebrow: \"WHAT YOU GET\"/eyebrow: \"WHAT AQV OFFERS\"/' -e 's/eyebrow: \"HOW TO ESTABLISH\"/eyebrow: \"HOW ENGAGEMENT WORKS\"/' -e 's/eyebrow: \"THE NUMBERS\"/eyebrow: \"OPPORTUNITIES \\\\& MODELS\"/' -e 's/eyebrow: \"ESTABLISH AT AQV\"/eyebrow: \"APPLY OR CONNECT\"/' -e 's/nav: \"What You Get\"/nav: \"What AQV Offers\"/' -e 's/nav: \"The Path\"/nav: \"How Engagement Works\"/' -e 's/nav: \"By the Numbers\"/nav: \"Opportunities \\\\& Models\"/' engage/hardware-companies/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"FOR SOFTWARE BUILDERS\"/eyebrow: \"WHY AQV\"/' -e 's/eyebrow: \"WHAT YOU GET\"/eyebrow: \"WHAT AQV OFFERS\"/' -e 's/eyebrow: \"HOW TO ENGAGE\"/eyebrow: \"HOW ENGAGEMENT WORKS\"/' -e 's/eyebrow: \"THE NUMBERS\"/eyebrow: \"OPPORTUNITIES \\\\& MODELS\"/' -e 's/eyebrow: \"ENGAGE WITH AQV\"/eyebrow: \"APPLY OR CONNECT\"/' -e 's/nav: \"What You Get\"/nav: \"What AQV Offers\"/' -e 's/nav: \"The Path\"/nav: \"How Engagement Works\"/' -e 's/nav: \"By the Numbers\"/nav: \"Opportunities \\\\& Models\"/' engage/software-companies/page.tsx)",
+      "Bash(sed -i -e 's/label=\"INDUSTRY VERTICALS\"/label=\"PRIORITY INDUSTRY VERTICALS\"/' -e 's/label=\"APPLICATIONS IN THE FIELD\"/label=\"APPLICATIONS \\\\& USE CASES\"/' -e 's/label=\"ENGAGEMENT MODELS\"/label=\"ENGAGEMENT \\\\& PILOTS\"/' industry/page.tsx)",
+      "Bash(sed -i -e 's/label=\"MOMENTUM IN NUMBERS\"/label=\"WHY AQV\"/' -e 's/label=\"WHY BUILD AT AQV\"/label=\"WHAT AQV OFFERS\"/' -e 's/label=\"WHAT WE OFFER\"/label=\"FUNDING \\\\& MARKET ACCESS\"/' -e 's/label=\"THE JOURNEY\"/label=\"STARTUP JOURNEY\"/' startups/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"WAYS TO ENGAGE\"/eyebrow: \"HOW TO INVEST \\\\& ESTABLISH\"/' -e 's/eyebrow: \"THE NUMBERS\"/eyebrow: \"OPPORTUNITIES \\\\& MODELS\"/' -e 's/eyebrow: \"PARTNER WITH THE VALLEY\"/eyebrow: \"PARTNER WITH AQV\"/' -e 's/nav: \"Routes\"/nav: \"How to Invest \\\\& Establish\"/' -e 's/nav: \"By the Numbers\"/nav: \"Opportunities \\\\& Models\"/' invest/page.tsx)",
+      "Bash(sed -i -e 's/label=\"THE WISER PIPELINE\"/label=\"THE TALENT PIPELINE\"/' -e \"s/label=\\\\\"WHO IT'S FOR\\\\\"/label=\\\\\"WHO IT IS FOR\\\\\"/\" talent/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"THE WISER PIPELINE\"/eyebrow: \"SCHOOLS, COLLEGES \\\\& PROFESSIONALS\"/' -e 's/eyebrow: \"THE NUMBERS\"/eyebrow: \"FEATURED PROGRAMMES\"/' -e 's/eyebrow: \"LEARN · LEARNING PATHWAYS\"/eyebrow: \"QUANTUM FOR EVERYONE\"/' -e 's/nav: \"WISER\"/nav: \"Schools \\\\& Colleges\"/' -e 's/nav: \"By the Numbers\"/nav: \"Featured Programmes\"/' learn/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"UPCOMING\"/eyebrow: \"UPCOMING EVENTS\"/' events/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"LATEST\"/eyebrow: \"LATEST NEWS\"/' news/page.tsx)",
+      "Bash(sed -i -e 's/eyebrow: \"FEATURED\"/eyebrow: \"FEATURED REPORTS\"/' resources/reports/page.tsx)",
+      "Bash(sed -i -e 's/>PROGRAMS</>PROGRAMMES</' -e 's/THE PROGRAM CATALOG/PROGRAMME CATALOGUE/' -e 's/HOW PROGRAMS RUN/HOW PROGRAMMES RUN/' -e 's/PROGRAM OUTCOMES/PROGRAMME OUTCOMES/' -e 's/FIND YOUR PROGRAM/FIND YOUR PROGRAMME/' programs/page.tsx)",
+      "Bash(sed -i -e 's/FOUR WAYS TO ENGAGE/APPLY \\\\/ CONNECT/' -e 's/>HOW CAN WE HELP</>HOW CAN WE HELP?</' contact/page.tsx)",
+      "WebFetch(domain:kononenkogroup.com)",
+      "WebFetch(domain:www.alethia.earth)"
     ]
   }
 }

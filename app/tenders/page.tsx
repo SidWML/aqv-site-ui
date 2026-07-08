@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "links", id: "open", nav: "Open Tenders", num: "01", eyebrow: "PROCUREMENT",
+    kind: "links", id: "open", nav: "Open Tenders", num: "01", eyebrow: "OPEN TENDERS",
     title: "Tenders &", accent: "procurement.",
     lead: "Open tenders, expressions of interest and procurement notices for Amaravati Quantum Valley. Notices are published here as they open.",
     groups: [
@@ -22,7 +22,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "list", id: "process", nav: "Process", num: "02", eyebrow: "HOW TO PARTICIPATE",
+    kind: "list", id: "process", nav: "How Procurement Works", num: "02", eyebrow: "HOW PROCUREMENT WORKS",
     title: "How procurement", accent: "works.",
     lead: "A transparent, published process for every notice.",
     items: [

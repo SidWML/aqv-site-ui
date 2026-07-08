@@ -142,7 +142,7 @@ export default function InfrastructurePage() {
         <div className="relative mx-auto max-w-[1600px]">
           <div className="mb-14 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-16">
             <div>
-              <Eyebrow num="03" label="THE AQV MASTERPLAN" className="mb-6" />
+              <Eyebrow num="03" label="AQV MASTERPLAN" className="mb-6" />
               <Reveal as="h2" variant="wipe" className="t-h2">
                 Six zones, <Accent>one campus.</Accent>
               </Reveal>
@@ -179,7 +179,7 @@ export default function InfrastructurePage() {
       <section className="relative overflow-hidden bg-stone px-5 py-16 text-ink sm:px-8 lg:px-10 lg:py-30">
         <div className="mx-auto max-w-[1600px]">
           <div className="mb-14 max-w-180">
-            <Eyebrow num="04" label="HOME TO IBM QUANTUM SYSTEM TWO" className="mb-6" />
+            <Eyebrow num="04" label="IBM QUANTUM SYSTEM TWO & COMPUTE ACCESS" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="t-h2">
               India&apos;s most powerful <Accent>quantum computer.</Accent>
             </Reveal>
@@ -222,7 +222,7 @@ export default function InfrastructurePage() {
       <section className="relative overflow-hidden bg-sand px-5 py-16 text-ink sm:px-8 lg:px-10 lg:py-30">
         <div className="mx-auto grid max-w-[1600px] items-start gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-16">
           <div className="lg:sticky lg:top-28">
-            <Eyebrow num="05" label="RESEARCH & LAB INFRASTRUCTURE" className="mb-6" />
+            <Eyebrow num="05" label="RESEARCH LABS & FACILITIES" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="mb-6 t-h3">
               Shared scientific <Accent>infrastructure.</Accent>
             </Reveal>

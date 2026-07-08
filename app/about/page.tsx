@@ -216,7 +216,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-night px-5 py-16 sm:px-8 lg:px-10 lg:py-30">
         <div className="mx-auto grid max-w-[1600px] gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20">
           <div className="lg:sticky lg:top-28 lg:self-start">
-            <Eyebrow num="06" label="THE FIVE PRINCIPLES" className="mb-6" />
+            <Eyebrow num="06" label="GUIDING PRINCIPLES" className="mb-6" />
             <Reveal as="h2" variant="wipe" className="mb-6 t-h2">
               Five forces, <Accent>one valley.</Accent>
             </Reveal>

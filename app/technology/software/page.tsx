@@ -2,7 +2,7 @@ import Subpage, { type Block } from "../../components/Subpage";
 
 const blocks: Block[] = [
   {
-    kind: "prose", id: "focus", nav: "Focus", num: "02", eyebrow: "THE LAYER",
+    kind: "prose", id: "focus", nav: "Why It Matters", num: "02", eyebrow: "WHY QUANTUM SOFTWARE MATTERS",
     title: "The software that makes quantum", accent: "usable.",
     body: [
       "Hardware is only half the story. AQV builds the software layer that turns a quantum processor into something researchers and enterprises can actually program against.",
@@ -11,7 +11,7 @@ const blocks: Block[] = [
     image: "/images/s2.png",
   },
   {
-    kind: "features", id: "capabilities", nav: "Capabilities", num: "03", eyebrow: "WHAT WE BUILD",
+    kind: "features", id: "capabilities", nav: "AQV Capability", num: "03", eyebrow: "AQV CAPABILITY",
     title: "From circuit to", accent: "application.",
     lead: "A software stack that meets developers where they are and takes them to the qubit.",
     items: [
@@ -21,7 +21,7 @@ const blocks: Block[] = [
     ],
   },
   {
-    kind: "media", id: "developers", nav: "For Developers", num: "04", eyebrow: "THE DEVELOPER PATH",
+    kind: "media", id: "developers", nav: "Infrastructure & Access", num: "04", eyebrow: "INFRASTRUCTURE & ACCESS",
     title: "Open tools, real", accent: "hardware.",
     image: "/images/s6/c5.png",
     body: ["We keep the stack open and standards-aligned so teams can move from laptop simulators to System Two without rebuilding their work."],
@@ -33,7 +33,7 @@ const blocks: Block[] = [
     link: { href: "/engage/software-companies", label: "BUILD SOFTWARE AT AQV" },
   },
   {
-    kind: "stats", id: "metrics", nav: "By the Numbers", num: "05", eyebrow: "THE NUMBERS",
+    kind: "stats", id: "metrics", nav: "Applications", num: "05", eyebrow: "RESEARCH & INDUSTRY APPLICATIONS",
     title: "A living software", accent: "ecosystem.",
     items: [
       { value: "3", label: "Application domains" },
