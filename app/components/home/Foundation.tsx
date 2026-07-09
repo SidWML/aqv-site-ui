@@ -1,11 +1,5 @@
 import { Reveal, ArrowLink } from "../ui";
 
-const whyCards = [
-  { num: "01", title: "National capability", desc: "Quantum infrastructure and research, built in India.", img: "/images/s2/why-1.png" },
-  { num: "02", title: "Global partnerships", desc: "Delivered with world-leading technology partners.", img: "/images/s2/why-2.png" },
-  { num: "03", title: "Built for access", desc: "Open to companies, founders, investors and learners.", img: "/images/s2/why-3.png" },
-];
-
 const audiences = [
   { label: "Investor", href: "/invest" },
   { label: "Industry", href: "/industry" },
@@ -27,7 +21,7 @@ export default function Foundation() {
         <Reveal className="mb-8 flex items-center gap-3.5">
           <span className="t-eyebrow-num text-accent">02</span>
           <span className="h-px w-9 bg-accent" />
-          <span className="t-eyebrow text-ink/60">WHY AQV</span>
+        <span className="t-eyebrow text-ink/60">WHY AQV, WHY NOW</span>
         </Reveal>
 
         <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-end lg:gap-16">
@@ -47,35 +41,14 @@ export default function Foundation() {
           </div>
         </div>
 
-        {/* image cards */}
-        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-3 lg:mt-18">
-          {whyCards.map((c, i) => (
-            <Reveal
-              key={c.title}
-              variant="scale"
-              delay={i * 0.1}
-              className="group relative aspect-4/3 overflow-hidden rounded-card shadow-panel"
-            >
-              <img
-                src={c.img}
-                alt=""
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-600 ease-out group-hover:scale-105"
-              />
-              <div
-                aria-hidden
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(180deg,rgba(10,14,26,0) 30%,rgba(10,14,26,0.5) 60%,rgba(10,14,26,0.9) 100%)" }}
-              />
-              <div className="absolute inset-x-0 bottom-0 p-6 text-cream">
-                <div className="mb-2 flex items-baseline gap-3">
-                  <span className="t-h3 leading-none text-accent">{c.num}</span>
-                  <span className="t-eyebrow">{c.title}</span>
-                </div>
-                <div className="t-body-sm text-cream/80">{c.desc}</div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        {/* image — single composite visual (carries its own text) */}
+        <Reveal variant="scale" className="mt-14 overflow-hidden  lg:mt-18">
+          <img
+            src="/images/s2/why.png"
+            alt="Why AQV — national capability, global partnerships and built for access"
+            className="block w-full"
+          />
+        </Reveal>
 
         {/* audience router */}
         <Reveal className="mt-12 flex flex-col items-start gap-4 border-t border-ink/12 pt-8 sm:flex-row sm:items-center sm:justify-between">

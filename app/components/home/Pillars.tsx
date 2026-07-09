@@ -4,25 +4,11 @@ import { Reveal, Accent } from "../ui";
 
 const pillars = [
   {
-    num: "01",
-    title: "PHYSICAL INFRASTRUCTURE",
-    desc: "A purpose-built campus with world-class labs, clean rooms and high-performance compute.",
-    href: "/infrastructure",
-    icon: "M12 3 L20 7.5 V16.5 L12 21 L4 16.5 V7.5 Z M12 3 V21 M4 7.5 L20 16.5 M20 7.5 L4 16.5",
-  },
-  {
-    num: "02",
-    title: "HARDWARE ECOSYSTEM",
-    desc: "IBM quantum systems, a growing hardware stack and indigenous fabrication.",
-    href: "/technology/hardware",
-    icon: "M7 7 H17 V17 H7 Z M9 3 V7 M12 3 V7 M15 3 V7 M9 17 V21 M12 17 V21 M15 17 V21 M3 9 H7 M3 12 H7 M3 15 H7 M17 9 H21 M17 12 H21 M17 15 H21",
-  },
-  {
-    num: "03",
-    title: "DESIGN, PRODUCTS & R&D",
-    desc: "Breakthroughs across quantum algorithms, materials, sensing and hybrid quantum-AI.",
-    href: "/research",
-    icon: "M12 4 a8 8 0 1 0 0.01 0 M5 12 a14 7 0 0 0 14 0 M5 12 a14 7 0 0 1 14 0 M12 4 V20",
+    num: "05",
+    title: "INDUSTRY PARTNERSHIPS & GLOBAL COMPANIES",
+    desc: "Companies, startups and partners building and scaling at AQV.",
+    href: "/partners",
+    icon: "M12 3 L20 7 V11 c0 5-3.5 8-8 10 c-4.5-2-8-5-8-10 V7 Z M9 11 l2 2 4-4",
   },
   {
     num: "04",
@@ -32,11 +18,25 @@ const pillars = [
     icon: "M9 8 a3 3 0 1 0 6 0 a3 3 0 0 0 -6 0 M4 20 c0-4 3-6 8-6 s8 2 8 6 M18 6 a2 2 0 1 0 0.01 0",
   },
   {
-    num: "05",
-    title: "INDUSTRY PARTNERSHIPS & GLOBAL COMPANIES",
-    desc: "Companies, startups and partners building and scaling at AQV.",
-    href: "/partners",
-    icon: "M12 3 L20 7 V11 c0 5-3.5 8-8 10 c-4.5-2-8-5-8-10 V7 Z M9 11 l2 2 4-4",
+    num: "03",
+    title: "DESIGN, PRODUCTS & R&D",
+    desc: "Breakthroughs across quantum algorithms, materials, sensing and hybrid quantum-AI.",
+    href: "/research",
+    icon: "M12 4 a8 8 0 1 0 0.01 0 M5 12 a14 7 0 0 0 14 0 M5 12 a14 7 0 0 1 14 0 M12 4 V20",
+  },
+  {
+    num: "02",
+    title: "HARDWARE ECOSYSTEM",
+    desc: "IBM quantum systems, a growing hardware stack and indigenous fabrication.",
+    href: "/technology/hardware",
+    icon: "M7 7 H17 V17 H7 Z M9 3 V7 M12 3 V7 M15 3 V7 M9 17 V21 M12 17 V21 M15 17 V21 M3 9 H7 M3 12 H7 M3 15 H7 M17 9 H21 M17 12 H21 M17 15 H21",
+  },
+  {
+    num: "01",
+    title: "PHYSICAL INFRASTRUCTURE",
+    desc: "A purpose-built campus with world-class labs, clean rooms and high-performance compute.",
+    href: "/infrastructure",
+    icon: "M12 3 L20 7.5 V16.5 L12 21 L4 16.5 V7.5 Z M12 3 V21 M4 7.5 L20 16.5 M20 7.5 L4 16.5",
   },
 ];
 
@@ -159,7 +159,7 @@ export default function Pillars() {
         {/* ---- CENTER: exploded-disc render ---- */}
         <Reveal delay={0.15} className="flex flex-col items-center">
           <img
-            src="/images/s3-n.png"
+            src="/images/s3-new.png"
             alt="The five pillars — an exploded view of the AQV quantum campus"
             className="block w-full max-w-110 object-contain"
           />

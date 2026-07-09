@@ -7,12 +7,12 @@ export default function Hero() {
     <section
       id="top"
       data-theme="dark"
-      className="relative flex min-h-screen items-center overflow-hidden bg-night pt-24 pb-16 lg:pt-20"
+      className="relative flex min-h-screen items-center overflow-hidden bg-night pt-24 pb-16 lg:pt-32"
     >
       {/* backdrop image + left fade */}
       <div className="absolute right-0 top-0 h-full w-full opacity-85 lg:w-[100%]">
         <img
-          src="/images/hero.png"
+          src="/images/home/hero.png"
           alt="AQV quantum campus — night exterior, riverside"
           className="block h-full w-full object-cover"
         />
@@ -56,11 +56,11 @@ export default function Hero() {
       </div> */}
 
       {/* equation motif */}
-      <div className="absolute right-[5%] top-[18%] hidden animate-[aqvDrift_6s_ease-in-out_infinite] border-l border-gold/40 pl-4.5 t-mono text-cream/55 lg:block">
+      {/* <div className="absolute right-[5%] top-[18%] hidden animate-[aqvDrift_6s_ease-in-out_infinite] border-l border-gold/40 pl-4.5 t-mono text-cream/55 lg:block">
         <div className="mb-2.5 t-overline text-gold">SUPERPOSITION</div>
         <div className="mb-1.5">|ψ⟩ = α|0⟩ + β|1⟩</div>
         <div className="border-t border-cream/15 pt-1.5">|α|² + |β|² = 1</div>
-      </div>
+      </div> */}
 
       {/* content */}
       <div className="relative z-[5] mx-auto w-full max-w-[1600px] px-5 sm:px-8 lg:px-10">
@@ -72,8 +72,8 @@ export default function Hero() {
           </Reveal>
           <h1 className="mb-7.5 t-display">
             <TextReveal text="Amaravati" className="block" delay={0.15} />
-            <TextReveal text="Quantum" className="block text-accent" delay={0.42} />
-            <TextReveal text="Valley" className="block" delay={0.56} />
+            <TextReveal text="Quantum Valley" className="block text-accent" delay={0.42} />
+            {/* <TextReveal text="" className="block" delay={0.56} /> */}
           </h1>
           <Reveal as="p" delay={0.2} className="mb-5 max-w-107.5 t-lead text-cream/82">
             India&apos;s first integrated quantum-AI ecosystem, taking shape in Amaravati, Andhra Pradesh.

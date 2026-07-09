@@ -8,7 +8,7 @@ import { PathIcon, ArrowUR } from "../dc";
 
 // Pre-composed banner slides (text + scrim baked into each image) for the
 // launchpad showcase carousel.
-const slides = [1, 2, 3, 4, 5].map((n) => `/images/s5/s${n}.png`);
+const slides = [1, 2, 3, 4, 5].map((n) => `/images/s5/sld-${n}.png`);
 
 type SubCard = {
   tag: string;
@@ -64,14 +64,14 @@ export default function Launchpad() {
         {/* ----- banner carousel (s1–s5) ----- */}
         <Reveal
           delay={0.15}
-          className="relative h-64 sm:h-80 lg:h-87.5 overflow-hidden rounded-card bg-night shadow-float"
+          className="relative h-50 sm:h-80 lg:h-[420px] overflow-hidden rounded-card bg-night shadow-float"
         >
           {slides.map((src, i) => (
             <img
               key={src}
               src={src}
               alt={`AQV Launchpad — slide ${i + 1} of ${slides.length}`}
-              className="absolute inset-0 h-full w-full object-cover object-top transition-opacity duration-[900ms] ease-out"
+              className="absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-[900ms] ease-out"
               style={{ opacity: i === active ? 1 : 0 }}
             />
           ))}
